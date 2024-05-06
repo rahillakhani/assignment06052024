@@ -1,0 +1,50 @@
+/* File Explorer Container */
+.file-explorer {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Files and Folders */
+.file {
+  cursor: pointer;
+  padding: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.file:hover {
+  background-color: #f0f0f0;
+}
+
+.file.active {
+  background-color: #cceeff;
+}
+
+/* Folder Icon */
+.folder::before {
+  content: '\1F4C1'; /* Unicode for folder icon (you can replace with your own icon or SVG) */
+  margin-right: 8px;
+}
+
+/* Context Menu */
+.context-menu {
+  position: fixed;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 4px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.context-menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.context-menu ul li {
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+.context-menu ul li:hover {
+  background-color: #f0f0f0;
+}
